@@ -1,2 +1,11 @@
-# catalog
-Catalog of mechanisms used to onboard IoT devices
+# Catalog of Onboarding Mechanisms for IoT Devices
+
+## DPP
+
+## EAP-NOOB
+
+## BRSKI varients
+
+## Zigbee
+
+## Bluetooth
