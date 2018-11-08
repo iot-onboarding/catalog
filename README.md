@@ -6,17 +6,22 @@ When considering each of these technologies, provide one or two sentences on wha
  * What, if any, proof of possession mechanism is there?
  * What form of credential is returned?
  * Is online access required for onboarding?
+ * Who becomes the root of trust at the end of onboarding (if any)
  * Could/Is the resulting credential be used for application identity?
  * What happens if the box gets reset?
  * How can transfer of ownership occur?
  * What sort of manufacturing requirements are there?
  * What sort of crypto requirements are there?
  * Reference link
- 
+
 Feel free to add or vary the questions.
- 
+
 
 ## DPP
+
+## WPA2-PSK
+
+## Hotspot 2.0 OSU
 
 ## EAP-NOOB
 
@@ -33,7 +38,7 @@ Basic BRSKI requires back-end sales integration to know if a device belongs on a
 ### What form of credential is returned?
 
 An X.509 certificate via a voucher.
- 
+
 ### Is online access required for onboarding?
 
 Yes.  The MASA is an online service.
@@ -47,7 +52,7 @@ Yes.
 The BRSKI process would have to be rerun.  The MASA service would be required again.
 
 ### How can transfer of ownership occur?
- 
+
  BRSKI would require that either the device consider the current LDEVID (deployment cert) as an IDEVID (manufacturer cert) or that the transfer of ownership be recorded by the MASA.
 
 
