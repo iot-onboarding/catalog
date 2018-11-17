@@ -25,6 +25,8 @@ Feel free to add or vary the questions.
 
 ## EAP-NOOB
 
+## CoAP-EAP
+
 ## Template-Based Reprovisioning
 
 ### Template Re-Provisioning via EAP
