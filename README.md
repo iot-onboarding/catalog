@@ -97,15 +97,59 @@ Yes.  The MASA is an online service.
 
 Yes.
 
-### What happens if the box gets reset?
+ * What happens if the box gets reset?
 
 The BRSKI process would have to be rerun.  The MASA service would be required again.
 
-### How can transfer of ownership occur?
+ * How can transfer of ownership occur?
 
  BRSKI would require that either the device consider the current LDEVID (deployment cert) as an IDEVID (manufacturer cert) or that the transfer of ownership be recorded by the MASA.
 
+## Wi-SUN (version 1)
 
+ * How does device introduce itself to the infrastructure or peer?
+ 
+ EAP-TLS
+ 
+ * What, if any, proof of possession mechanism is there?
+ 
+ 
+ 
+ * What form of credential is returned?
+ 
+ Devices run off of manufacturer certs.
+ 
+ * Is online access required for onboarding?
+ 
+ No
+ 
+ * Who becomes the root of trust at the end of onboarding (if any)
+ 
+ Trust is manually configured.
+ 
+ * Could/Is the resulting credential be used for application identity?
+ 
+ Yes (but it is the manufacturer certificate).
+ 
+ * What happens if the box gets reset?
+ 
+ You still use the manufacgturer certificate.
+ 
+ * How can transfer of ownership occur?
+ 
+ /* need answer */
+ 
+ * What sort of manufacturing requirements are there?
+ 
+ Certificate/trust anchor installation.
+ 
+ * What sort of crypto requirements are there?
+ 
+/* Need answer: RSA or ECC */
+ 
+ * Reference link
+
+Spec not publsihed but see https://tools.ietf.org/id/draft-heile-lpwan-wisun-overview-00.html.
 ## Zigbee
 
 ## Bluetooth
