@@ -67,7 +67,7 @@ https://www.wi-fi.org/downloads-registered-guest/Device_Provisioning_Protocol_Sp
 
 ## EAP-NOOB
 
-## CoAP-EAP
+## BRSKI-CoAP-EST
 
 ## Template-Based Reprovisioning
 
