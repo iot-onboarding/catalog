@@ -17,7 +17,49 @@ When considering each of these technologies, provide one or two sentences on wha
 Feel free to add or vary the questions.
 
 
-## DPP
+## Device Provisioning Protocol (DPP)
+ * How does device introduce itself to the infrastructure or peer?
+ 
+There are multiple approaches for trusted introduction, but in the first instance, DPP makes use of a *configurator*, a device that is proximate to the device to be onboarded, and contacts the peer with an action frame /* Dan to check this */
+ 
+ * What, if any, proof of possession mechanism is there?
+ 
+An asymmetric key that is provided, at least initially, with a QR code.
+
+ * What form of credential is returned?
+ 
+A key appropriate for DPP authentication (a new AKM).
+
+ * Is online access required for onboarding?
+ 
+No.
+
+ * Who becomes the root of trust at the end of onboarding (if any)
+
+The device leverages the QR code as proof of trust.  This binds the device to the network for onboarding, but that is the full extent of it.
+
+ * Could/Is the resulting credential be used for application identity?
+
+Probably not.
+
+ * What happens if the box gets reset?
+
+The owner can use the configurator again, so long as either it has stored the original QR code *or* the original QR code is available on a label.
+
+ * How can transfer of ownership occur?
+ 
+Provide the QR code to the new owner.
+
+ * What sort of manufacturing requirements are there?
+ 
+Device must be aware of its private key, and the QR code must be printed somewhere.
+
+ * What sort of crypto requirements are there?
+
+
+ * Reference link
+
+https://www.wi-fi.org/downloads-registered-guest/Device_Provisioning_Protocol_Specification_v1.0.pdf/35330
 
 ## WPA2-PSK
 
