@@ -77,23 +77,23 @@ https://www.wi-fi.org/downloads-registered-guest/Device_Provisioning_Protocol_Sp
 
 ## Basic BRSKI
 
-### How does device introduce itself to the infrastructure or peer?
+ * How does device introduce itself to the infrastructure or peer?
 
 A manufacturer certificate and trust anchor is installed in the device at build time.  During onboarding, that information is passed to a join registrar, which adds additional information and passes it to the manufacturer authorized signing authority (MASA), which then returns a voucher.
 
-### What, if any, proof of possession mechanism is there?
+ * What, if any, proof of possession mechanism is there?
 
 Basic BRSKI requires back-end sales integration to know if a device belongs on a particular network.
 
-### What form of credential is returned?
+ *  What form of credential is returned?
 
 An X.509 certificate via a voucher.
 
-### Is online access required for onboarding?
+ * Is online access required for onboarding?
 
 Yes.  The MASA is an online service.
 
-### Could/Is the resulting credential be used for application identity?
+ * Could/Is the resulting credential be used for application identity?
 
 Yes.
 
