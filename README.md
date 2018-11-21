@@ -113,7 +113,7 @@ The BRSKI process would have to be rerun.  The MASA service would be required ag
  
  * What, if any, proof of possession mechanism is there?
  
- 
+ Infra is expected to have list of registered devices.
  
  * What form of credential is returned?
  
@@ -137,7 +137,7 @@ The BRSKI process would have to be rerun.  The MASA service would be required ag
  
  * How can transfer of ownership occur?
  
- /* need answer */
+Not specified in standard.  In v1, device accepts cert.
  
  * What sort of manufacturing requirements are there?
  
@@ -145,7 +145,7 @@ The BRSKI process would have to be rerun.  The MASA service would be required ag
  
  * What sort of crypto requirements are there?
  
-/* Need answer: RSA or ECC */
+ TLS_ECDHE_ECDSA_WITH_AES_128_CCM_8 as MTI.
  
  * Reference link
 
