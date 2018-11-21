@@ -5,11 +5,12 @@ When considering each of these technologies, provide one or two sentences on wha
  * How does device introduce itself to the infrastructure or peer?
  * What, if any, proof of possession mechanism is there?
  * What form of credential is returned?
- * Is online access required for onboarding?
+ * Is full Internet access required for onboarding?
  * Who becomes the root of trust at the end of onboarding (if any)
  * Could/Is the resulting credential be used for application identity?
  * What happens if the box gets reset?
  * How can transfer of ownership occur?
+ * How can transfer to a different cloud service (if applicable) occur?
  * What sort of manufacturing requirements are there?
  * What sort of crypto requirements are there?
  * Reference link
