@@ -4,6 +4,7 @@ When considering each of these technologies, provide one or two sentences on wha
 
  * How does device introduce itself to the infrastructure or peer?
  * What, if any, proof of possession mechanism is there?
+ * Is access to other IP-based devices required in order to fully onboard the device?
  * What form of credential is returned?
  * Is full Internet access required for onboarding?
  * Who becomes the root of trust at the end of onboarding (if any)
