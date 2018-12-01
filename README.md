@@ -143,6 +143,8 @@ Device must be aware of its private key, and the QR code must be printed somewhe
 
 ## EAP-NOOB
 
+## CoAP-EAP
+
 ## BRSKI-CoAP-EST
 
 ## Template-Based Reprovisioning
