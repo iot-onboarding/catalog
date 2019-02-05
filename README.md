@@ -5,7 +5,7 @@ When considering each of these technologies, provide one or two sentences on wha
  * How does device introduce itself to the infrastructure or peer?
  * What, if any, proof of possession mechanism is there?
  * Is access to other IP-based devices required in order to fully onboard the device?
- * What form of credential is returned?
+ * What form of credential is installed on the device?
  * Is full Internet access required for onboarding?
  * Who becomes the root of trust at the end of onboarding (if any)
  * Could/Is the resulting credential be used for application identity?
@@ -37,8 +37,7 @@ No.
 
  * What form of credential is returned?
 
-The question doesn't make sense, as onboarding doesn't "return" anything, onboarding
-provisions information into the device.  Such information includes L2 credentials
+Such information includes L2 credentials
 (e.g., WiFi SSID and key), as well as the owner's cert, and optionally a cloud service
 URI and credentials needed to sign into it.
 
@@ -102,7 +101,7 @@ There are multiple approaches for trusted introduction, but in the first instanc
  
 An asymmetric key that is provided, at least initially, with a QR code.
 
- * What form of credential is returned?
+ * What form of credential is installed into the device?
  
 A key appropriate for DPP authentication (a new AKM).
 
@@ -163,9 +162,9 @@ A manufacturer certificate and trust anchor is installed in the device at build 
 
 Basic BRSKI requires back-end sales integration to know if a device belongs on a particular network.
 
- *  What form of credential is returned?
+ *  What form of credential is installed into the device?
 
-An X.509 certificate via a voucher.
+An X.509 certificate that service as a root of trust, via a voucher.
 
  * Is online access required for onboarding?
 
@@ -193,7 +192,7 @@ The BRSKI process would have to be rerun.  The MASA service would be required ag
  
  Infra is expected to have list of registered devices.
  
- * What form of credential is returned?
+ * What form of credential is installed into the device?
  
  Devices run off of manufacturer certs.
  
@@ -247,10 +246,9 @@ A QR code can be used to provide proof of possession of the device.
 
 No.
 
- * What form of credential is returned?
+ * What form of credential is installed into the device?
 
-The question doesn't make sense, as onboarding doesn't "return" anything, onboarding
-provisions information into the device.  Such information minimally includes L2 credentials
+Such information minimally includes L2 credentials
 (WiFi SSID and key), and typically ownership transfer is done at the same time, before a
 device is put on the regular WiFi network, such that the device is provisioned with the
 owner's cert and a certificate of owner-allowed device capabilities.
