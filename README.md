@@ -13,3 +13,5 @@ The catalog is still in early development.  PRs are welcome.  To date, what exis
 - A concise table format intended to roughly capture that same information, with some additional editorial thoughts.
 
 Again, feel free to edit or add.  Especially if you have references.
+
+There's an email list to discuss all of this: iot-onboarding@ietf.org.  You can subscribe by going to https://www.ietf.org/mailman/listinfo/iot-onboarding.
