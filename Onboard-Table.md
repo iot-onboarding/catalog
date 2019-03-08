@@ -7,12 +7,13 @@ There are a lot of them.  Scroll to the right if you need to.  The information i
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | Correct Network Selection | Beacon based on user action |   | Yes, based on "configurator" | Hunt | Hunt |   | SoftAP / Beacon | Yes | Via Manual Pairing | Hunt |    |  | | Hunt |
 | Onboard without Internet Acces  | Yes | Yes | Yes | No | Yes | No | Yes | Yes | Yes | Yes | Yes | No | | |
-| Proof of ownership | No | No | No | Yes when linked to sales or system integrators | Yes when linked to sales or system integrators | Yes when linked to sales or system integrators | Yes | Yes | No | No | Yes | | | No |
+| Proof of ownership | No | No | No | Yes when linked to sales or system integrators | Yes when linked to sales or system integrators | Yes when linked to sales or system integrators | Yes | Yes | No | No | Yes | | | No  |
 | Supply chain security | No | No | No | MASA can be linked to supply chain management tools |   | MASA can be linked to supply chain management tools | No | No | No | No |   | | | No |
-| Hands free* | No | No | No | Yes when linked to sales or system integrators | No | Yes with a MASA | No | No | Not with proof of posession | No | Yes | Yes? | | Not securely |
-| Security model | Presumption of no other announcements | no | Yes | Yes | Yes |   | Yes |   | No real PoP | Dynamic Code Gen | Yes | | | Pre-provisioned |
+| Hands free* | No | No | No | Yes when linked to sales or system integrators | No | Yes with a MASA | No | No | Not with proof of posession | No | Yes | Yes? | | No |
+| Security model | Presumption of no other announcements | no | Yes | Yes | Yes |   | Yes |   | No real PoP | Dynamic Code Gen | Yes | | | Label |
 | Status | Std |   | Std | In stream | Beginning |   | Std | Std | Std | Beginning |   | | | Std |
-| Key type | None | Ser # | Asym. | X.509 | X.509+private |   | Asym | Asym | Asym | Asym | Asym | | |
-| Manufacturing complexity | Nvram | Serial# | Key+Label | Cert+Registration | Cert+label |   | Key+Label | Key+Label | Minimal | Dynamic Code Gen |   | SIM/SoftCIM | | Preconfiguration |
-| Deployment Challenges | Not Secure | Not secure | No EAP linkage | Internet access | Scan required |   | Scan required and no EAP | No EAP linkage |   |   | SDO components | | | |
-| Who Implements | Lots |   | HPE | Siemens, Cisco, Sandelmann  |   | Siemens, NXP, Sandelmann, SILABs |   |   | Everyone |   | Intel, ARM | | | Lots |
+| Key type | None | Ser # | Asym. | X.509 | X.509+private |   | Asym | Asym | Asym | Asym | Asym | | Key+Label |
+| Manufacturing complexity | Nvram | Serial# | Key+Label | Cert+Registration | Cert+label |   | Key+Label | Key+Label | Minimal | Dynamic Code Gen |   | SIM/SoftCIM | | QR Code |
+| Deployment Challenges | Not Secure | Not secure | No EAP linkage | Internet access | Scan required |   | Scan required and no EAP | No EAP linkage |   |   | SDO components | | | Label Management|
+| Who Implements | Lots |   | HPE | Siemens, Cisco, Sandelmann  |   | Siemens, NXP, Sandelmann, SILABs |   |   | Everyone |   | Intel, ARM | | |  |
+|Reference|||||||||||
