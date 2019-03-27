@@ -15,5 +15,5 @@ There are a lot of them.  Scroll to the right if you need to.  The information i
 | Key type | None | Ser # | Asym. | X.509 | X.509+private |   | Asym | Asym | Asym | Asym | Asym | | Key+Label |
 | Manufacturing complexity | Nvram | Serial# | Key+Label | Cert+Registration | Cert+label |   | Key+Label | Key+Label | Minimal | Dynamic Code Gen |   | SIM/SoftCIM | | QR Code |
 | Deployment Challenges | Not Secure | Not secure | No EAP linkage | Internet access | Scan required |   | Scan required and no EAP | No EAP linkage |   |   | SDO components | | | Label Management|
-| Who Implements | Lots |   | HPE | Siemens, Cisco, Sandelmann  |   | Siemens, NXP, Sandelmann, SILABs |   |   | Everyone |   | Intel, ARM | | |  |
+| Who Implements | Lots |   | HPE | Siemens, Cisco, Sandelman  |   | Siemens, NXP, Sandelman, SILABs |   |   | Everyone |   | Intel, ARM | | |  |
 |Reference|||||||||||
