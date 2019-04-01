@@ -1,5 +1,10 @@
 # Onobarding mechanisms
 
+This table has been moved to a Google Sheet:
+   https://docs.google.com/spreadsheets/d/1OwT7PPoXvfR4Xw2aYLNNMFssaKbL_6TcKtnITJ-hQzM/edit?usp=sharing
+   
+Please edit/suggest here.
+
 There are a lot of them.  Scroll to the right if you need to.  The information in here needs more updating.
 
 
