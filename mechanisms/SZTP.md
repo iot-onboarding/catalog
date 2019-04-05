@@ -1,4 +1,4 @@
-# SZTP
+# Secure Zero Touch Provisioning (SZTP)
 
   * How does device introduce itself to the infrastructure or peer? 
 
