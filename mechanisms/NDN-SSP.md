@@ -5,7 +5,8 @@
   Via some out-of-band operations (e.g., scanning the QR code stick on the device), the device and a controller of the network can share some keys, which are used ensure mutual authentication between the two ends. To start onboarding, the device broadcasts a sign-on request to discover the controller who has obtained those pre-shared keys. After mutual authentication and message freshness are verified, the controller provisions new security credentials to allow the device to securely communicate with other peers in the same network.
 
 * What, if any, proof of possession mechanism is there?
-  Signatures on messages based on security credentials such as a pre-shared symmetric key / pre-shared asymmetric key pair are used to guarantee authenticity of messages during the sign-on process.
+  A digital certificate directly or indirectly certified by the local trust anchor of a network proves the possession of a device in this network.
+  In NDN, every network sets a local trust anchor, whose name and an asymmetric signing key are binded in a self-certified digital certificate. Every device in the network must have its key directly or indirectly signed with the trust anchor's signing key, making a anchor-signed certificate. After securely obtaining such credentials, the device can sign packets in communicating with others in this network, and NDN builds in the mechanism to enable others to authenticate this device by recursively tracking the signing key until the one of the local trust anchor. 
 
 * Is access to other IP-based devices required in order to fully onboard the device?
   No. A device can be signed on to a controller locally through a link layer protocol like BLE.
