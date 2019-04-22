@@ -15,7 +15,7 @@
   A pre-shared asymmetric key and a pre-shared symmetric key. More specifically, a symmetric key and the private key of an asymmetric key-pair are installed on the device. The public key of the asymmetric key-pair and the symmetric key are supposed to be printed out and stick on the device or any other palce such that they be obtained by the controller via out-of-band operations.
 
 * Is full Internet access required for onboarding?
-  No.
+  No. NDN-SSP involves local communication only. 
 
 * Who becomes the root of trust at the end of onboarding (if any)
   The controller serves as a local root of trust.
