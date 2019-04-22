@@ -2,7 +2,7 @@
 # NDN-SSP
 
 * How does device introduce itself to the infrastructure or peer?
-  The device sends a sign-on request to a controller. The controller serves as a local trust anchor. If the device's security credentials are valid (i.e. its pre-shared secret keys are correct), then the controller provisions new security credentials to allow the device to securely communicate within the network that the controller serves as a trust anchor for.
+  Via some out-of-band operations (e.g., scanning the QR code stick on the device), the device and a controller of the network can share some keys, which are used ensure mutual authentication between the two ends. To start onboarding, the device broadcasts a sign-on request to discover the controller who has obtained those pre-shared keys. After mutual authentication and message freshness are verified, the controller provisions new security credentials to allow the device to securely communicate with other peers in the same network.
 
 * What, if any, proof of possession mechanism is there?
   Signatures on messages based on security credentials such as a pre-shared symmetric key / pre-shared asymmetric key pair are used to guarantee authenticity of messages during the sign-on process.
