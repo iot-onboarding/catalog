@@ -12,7 +12,7 @@
   No. NDN-SSP can run at the NDN packet granularity for generalization for higher flexibility, or directly run over a link protocol like BLE for specialization with higher efficiency and/or security. Neither of the two cases involves IP-based devices.
 
 * What form of credential is installed on the device?
-  A pre-shared asymmetric key and a pre-shared symmetric key.
+  A pre-shared asymmetric key and a pre-shared symmetric key. More specifically, a symmetric key and the private key of an asymmetric key-pair are installed on the device. The public key of the asymmetric key-pair and the symmetric key are supposed to be printed out and stick on the device or any other palce such that they be obtained by the controller via out-of-band operations.
 
 * Is full Internet access required for onboarding?
   No.
