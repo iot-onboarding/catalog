@@ -24,7 +24,7 @@
   Yes, the device gets an asymmetric key pair that is certified by the local trust anchor. This public private key pair can be used to sign all further messages sent out by the device, so that any other devices in the same network can verify the device's authenticity and verify its messages' integrity. In case that the device runs more than one applications, each of which can have a key signed with the device key, the produced NDN certificate certifies the bundle of the application identity as well as the application's key. In this way, the authenticity of every application and the integrity of the messages produced by them are ensured.  
 
 * What happens if the box gets reset?
-  Currently, if the controller gets reset, all memory of signed-on devices is wiped. Currently, if the device gets reset, all memory of having signed-on is wiped. The sign-on protocol is still in development, so this will have to be addressed.
+  Basically, the device will have to start the sign-on process again by broadcasting a sign-on request.
 
 * How can transfer of ownership occur?
   There is no notion of transfer of ownership as of now. Once a controller is selected to be a root of trust for the network, 
