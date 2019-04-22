@@ -27,7 +27,7 @@
   Basically, the device will have to start the sign-on process again by broadcasting a sign-on request.
 
 * How can transfer of ownership occur?
-  There is no notion of transfer of ownership as of now. Once a controller is selected to be a root of trust for the network, 
+  In NDN-SSP, this is essentially the same case as when a device is reset. The only difference is that, in this case, the controller belongs to the new owner should have obtained the pre-shared keys of the device and be closer to the device than controllers belonging to the previous owners such that the new controller can answer the device's sign-on request more quickly. Because the NDN-SSP protocol requires the device to trust the first controller who answers its sign-on request and proves the possession of those pre-shared keys. 
 
 * How can transfer to a different cloud service (if applicable) occur?
   The sign-on protocol is meant to support an IoT system that is not dependent on the cloud.
