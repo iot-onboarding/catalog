@@ -9,7 +9,7 @@
   In NDN, every network sets a local trust anchor, whose name and an asymmetric signing key are binded in a self-certified digital certificate. Every device in the network must have its key directly or indirectly signed with the trust anchor's signing key, making a anchor-signed certificate. After securely obtaining such credentials, the device can sign packets in communicating with others in this network, and NDN builds in the mechanism to enable others to authenticate this device by recursively tracking the signing key until the one of the local trust anchor. 
 
 * Is access to other IP-based devices required in order to fully onboard the device?
-  No. A device can be signed on to a controller locally through a link layer protocol like BLE.
+  No. NDN-SSP can run at the NDN packet granularity for generalization for higher flexibility, or directly run over a link protocol like BLE for specialization with higher efficiency and/or security. Neither of the two cases involves IP-based devices.
 
 * What form of credential is installed on the device?
   A pre-shared asymmetric key and a pre-shared symmetric key.
