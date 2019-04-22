@@ -33,7 +33,7 @@
   The sign-on protocol is meant to support an IoT system that is not dependent on the cloud.
 
 * What sort of manufacturing requirements are there?
-  There must be an out-of-band mechanism for the device to share the public key of its initial asymmetric key pair with the controller, to allow the controller to verify messages from the device. This means that the manufacturer will likely have to attach some kind of easily scannable representation of the public key (i.e. a QR code) to their devices, in order to allow users to easily sign on their devices to a controller.
+  There must be an out-of-band mechanism for the device to share the public key of its initial asymmetric key pair with the controller, to allow the controller to verify messages from the device. In addition, a symmetric key of the device is shared with the controller in the same way, which helps the device to authenticate the controller who has obtained this key. This means that the manufacturer will likely have to attach some kind of easily scannable representation of the public key and the symmetric key (i.e. a QR code) to their devices, in order to allow users to easily sign on their devices to the network via a controller.
 
 * What sort of crypto requirements are there?
   There are several variants of the protocol depending on the capabilities of the device being signed on, but for the basic version of the protocol which assumes that the device has minimal capabilities, the requirements are these:
