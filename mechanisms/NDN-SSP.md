@@ -18,7 +18,7 @@
   No. NDN-SSP involves local communication only. 
 
 * Who becomes the root of trust at the end of onboarding (if any)
-  The controller serves as a local root of trust.
+  In NDN, every network sets its own local trust anchor, of which the signing key and a self-certified certificate are installed on controller(s). A controller is granted the privilege to sign other devices' keys with the signing key of the trust anchor. 
 
 * Could/Is the resulting credential be used for application identity?
   Yes, the device gets an asymmetric key pair that is certified by the controller. This public private key pair can be used to sign all further messages sent out by the device, so that any other devices in the same network where the controller is serving as a trust anchor can verify the device's messages' integrity.
